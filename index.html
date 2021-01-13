@@ -39,11 +39,14 @@
         <div id="content">
 
             <div class="row">
-                <ol>
-                    <li><a href="#websites" class="text-dark">Websites</a></li>
-                    <li><a href="#articles" class="text-dark">Articles</a></li>
-                    <li><a href="#social" class="text-dark">Social Media</a></li>
-                </ol>
+                <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3">
+                    <h2 class="text-center">Navigation</h2>
+                    <div class="list-group">
+                        <a href="#websites" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Websites<span id="badge-websites" class="badge badge-primary badge-pill bg-primary"></span></a>
+                        <a href="#articles" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Articles<span id="badge-articles" class="badge badge-primary badge-pill bg-primary"></span></a>
+                        <a href="#social" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Social Media<span id="badge-social" class="badge badge-primary badge-pill bg-primary"></span></a>
+                    </div>
+                </div>
             </div>
 
             <div class="row">
@@ -53,8 +56,9 @@
                 </div>
                 
                 <div class="d-flex p-2 flex-wrap">
+
                     <div class="p-2">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card card-website" style="width: 18rem;">
                             <a href="https://snow.somenano.com" target="_new" class="text-center">
                                 <img src="/images/snowflake.png" class="card-img-top custom-card-img-top" alt="SomeNano Snow">
                             </a>
@@ -68,7 +72,7 @@
                     </div>
 
                     <div class="p-2">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card card-website" style="width: 18rem;">
                             <a href="https://plinko.somenano.com" target="_new" class="text-center">
                                 <img src="/images/plinko.png" class="card-img-top custom-card-img-top" alt="SomeNano Plinko">
                             </a>
@@ -82,7 +86,7 @@
                     </div>
 
                     <div class="p-2">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card card-website" style="width: 18rem;">
                             <a href="https://publicnodes.somenano.com" target="_new" class="text-center">
                                 <img src="/images/somenano.png" class="card-img-top custom-card-img-top" alt="Nano Public Nodes">
                             </a>
@@ -96,16 +100,31 @@
                     </div>
 
                     <div class="p-2">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card card-website" style="width: 18rem;">
                             <a href="https://marketcapcompare.com" target="_new" class="text-center">
                                 <img src="/images/marketcapcompare.png" class="card-img-top custom-card-img-top" alt="MarketCap Compare">
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title">M arketCap Compare</h5>
+                                <h5 class="card-title">MarketCap Compare</h5>
                                 <p class="card-text">Find your favorite "Top 100" cryptocurrency and see what its price would be at a different market capitalization rankings.</p>
                                 <a href="https://marketcapcompare.com" target="_new" class="btn btn-primary mb-2">Visit</a>
                                 <a href="https://github.com/somenano/marketcapcompare.com" target="_new" class="btn btn-primary mb-2">Open Source</a>
                                 <a href="https://github.com/somenano/api.marketcapcompare.com" target="_new" class="btn btn-primary mb-2">Open Source (API)</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="p-2">
+                        <div class="card card-website" style="width: 18rem;">
+                            <a href="https://www.nanosecretsanta.com" target="_new" class="text-center">
+                                <img src="/images/nanosecretsanta.png" class="card-img-top custom-card-img-top" alt="Nano Secret Santa">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Nano Secret Santa</h5>
+                                <p class="card-text">Spend Nano in an Internet gift exchange! Successfuly run in 2019, but looking to iron out privacy concerns before another run :-)</p>
+                                <a href="https://www.nanosecretsanta.com" target="_new" class="btn btn-primary mb-2">Visit</a>
+                                <a href="https://github.com/somenano/NanoSecretSanta" target="_new" class="btn btn-primary mb-2">Open Source</a>
                             </div>
                         </div>
                     </div>
@@ -122,7 +141,7 @@
                 
                 <div class="d-flex p-2 flex-wrap">
                     <div class="p-2">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card card-article" style="width: 18rem;">
                             <a href="https://somenano.medium.com/" target="_new" class="text-center">
                                 <img src="/images/medium.png" class="card-img-top custom-card-img-top" alt="Medium">
                             </a>
@@ -145,7 +164,7 @@
                 
                 <div class="d-flex p-2 flex-wrap">
                     <div class="p-2">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card card-social" style="width: 18rem;">
                             <a href="https://twitter.com/SomeNanoTweets" target="_new" class="text-center">
                                 <img src="/images/twitter.png" class="card-img-top custom-card-img-top" alt="Twitter">
                             </a>
@@ -163,6 +182,12 @@
         </div>
 
     </div>
+
+    <script>
+        document.getElementById('badge-websites').innerText = document.querySelectorAll('.card-website').length;
+        document.getElementById('badge-articles').innerText = document.querySelectorAll('.card-article').length;
+        document.getElementById('badge-social').innerText = document.querySelectorAll('.card-social').length;
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
