@@ -42,7 +42,7 @@
                 <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3">
                     <h2 class="text-center">Navigation</h2>
                     <div class="list-group">
-                        <a href="#websites" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Websites<span id="badge-websites" class="badge badge-primary badge-pill bg-primary"></span></a>
+                        <a href="#projects" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Projects<span id="badge-projects" class="badge badge-primary badge-pill bg-primary"></span></a>
                         <a href="#articles" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Articles<span id="badge-articles" class="badge badge-primary badge-pill bg-primary"></span></a>
                         <a href="#social" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Social Media<span id="badge-social" class="badge badge-primary badge-pill bg-primary"></span></a>
                         <a href="#donate" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Support SomeNano<span id="badge-donate" class="badge badge-primary badge-pill bg-primary"></span></a>
@@ -53,13 +53,13 @@
             <div class="row">
 
                 <div class="d-flex p-2">
-                    <h2 id="websites">Websites</h2>
+                    <h2 id="projects">Projects</h2>
                 </div>
                 
                 <div class="d-flex p-2 flex-wrap">
 
                     <div class="p-2">
-                        <div class="card card-website" style="width: 18rem;">
+                        <div class="card card-projects" style="width: 18rem;">
                             <a href="https://snow.somenano.com" target="_new" class="text-center">
                                 <img src="/images/snowflake.png" class="card-img-top custom-card-img-top" alt="SomeNano Snow">
                             </a>
@@ -73,7 +73,7 @@
                     </div>
 
                     <div class="p-2">
-                        <div class="card card-website" style="width: 18rem;">
+                        <div class="card card-projects" style="width: 18rem;">
                             <a href="https://plinko.somenano.com" target="_new" class="text-center">
                                 <img src="/images/plinko.png" class="card-img-top custom-card-img-top" alt="SomeNano Plinko">
                             </a>
@@ -87,7 +87,7 @@
                     </div>
 
                     <div class="p-2">
-                        <div class="card card-website" style="width: 18rem;">
+                        <div class="card card-projects" style="width: 18rem;">
                             <a href="https://publicnodes.somenano.com" target="_new" class="text-center">
                                 <img src="/images/somenano.png" class="card-img-top custom-card-img-top" alt="Nano Public Nodes">
                             </a>
@@ -101,7 +101,20 @@
                     </div>
 
                     <div class="p-2">
-                        <div class="card card-website" style="width: 18rem;">
+                        <div class="card card-projects" style="width: 18rem;">
+                            <a href="https://node.somenano.com" target="_new" class="text-center">
+                                <img src="/images/somenano.png" class="card-img-top custom-card-img-top" alt="SomeNano Node">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">SomeNano Node</h5>
+                                <p class="card-text">Information on my free-to-use Public Nano Node (Monitor, RPC, WebSocket, Repeater)</p>
+                                <a href="https://node.somenano.com" target="_new" class="btn btn-primary mb-2">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-2">
+                        <div class="card card-projects" style="width: 18rem;">
                             <a href="https://marketcapcompare.com" target="_new" class="text-center">
                                 <img src="/images/marketcapcompare.png" class="card-img-top custom-card-img-top" alt="MarketCap Compare">
                             </a>
@@ -117,7 +130,7 @@
                     </div>
 
                     <div class="p-2">
-                        <div class="card card-website" style="width: 18rem;">
+                        <div class="card card-projects" style="width: 18rem;">
                             <a href="https://www.nanosecretsanta.com" target="_new" class="text-center">
                                 <img src="/images/nanosecretsanta.png" class="card-img-top custom-card-img-top" alt="Nano Secret Santa">
                             </a>
@@ -131,7 +144,7 @@
                     </div>
 
                     <div class="p-2">
-                        <div class="card card-website" style="width: 18rem;">
+                        <div class="card card-projects" style="width: 18rem;">
                             <a href="https://github.com/SomeNano" target="_new" class="text-center">
                                 <img src="/images/github.png" class="card-img-top custom-card-img-top" alt="SomeNano on GitHub">
                             </a>
@@ -279,7 +292,7 @@
     </div>
 
     <script>
-        document.getElementById('badge-websites').innerText = document.querySelectorAll('.card-website').length;
+        document.getElementById('badge-projects').innerText = document.querySelectorAll('.card-projects').length;
         document.getElementById('badge-articles').innerText = document.querySelectorAll('.card-article').length;
         document.getElementById('badge-social').innerText = document.querySelectorAll('.card-social').length;
         document.getElementById('badge-donate').innerText = document.querySelectorAll('.card-donate').length;
